@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Liberty College Adeke - Parent Login Portal</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href=".img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href=".lib/animate/animate.css" rel="stylesheet">
+    <link href=".lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href=".css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <!-- Template Stylesheet -->
+    <link href=".css/style.css" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: image(url('.img/carousel-1.jpg'));
+            margin: 0;
+            padding: 0;
+        }
+        .login-container {
+            max-width: 450px;
+            margin: 0 auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .login-container h3 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #007bff;
+        }
+        
+        .login-form .form-control {
+            height: 50px;
+            border-radius: 5px;
+            padding: 12px 15px;
+            border: 1px solid #e9e9e9;
+            transition: all 0.3s ease;
+            margin-bottom: 20px;
+        }
+        
+        .login-form .form-control:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+        }
+        
+        .login-btn {
+            background: #007bff;
+            color: #fff;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            width: 100%;
+            margin-top: 10px;
+        }
+        
+        .login-btn:hover {
+            background: #0069d9;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .login-options {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .login-options a {
+            margin: 0 10px;
+            color: #007bff;
+            font-weight: 500;
+        }
+        
+        .login-options a:hover {
+            text-decoration: underline;
+        }
+        
+        .login-icon {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .login-icon i {
+            font-size: 50px;
+            color: #007bff;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+   
+
+    <!-- Login Form Start -->
+    <div class="container-xxl py-5 bg-darkk">
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-6 col-md-8">
+                    <div class="login-container">
+                        <div class="login-icon">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <h3>Parent Login</h3>
+                        <form class="login-form">
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Email Address" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="password" class="form-control" placeholder="Password" required>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="rememberMe">
+                                <label class="form-check-label" for="rememberMe">Remember me</label>
+                            </div>
+                            <button type="submit" class="login-btn">Login</button>
+                        </form>
+                        <div class="login-options">
+                            <a href="#">Forgot Password?</a>
+                            <a href="#">Need Help?</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Login Form End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src=".lib/wow/wow.min.js"></script>
+    <script src=".lib/easing/easing.min.js"></script>
+    <script src=".lib/waypoints/waypoints.min.js"></script>
+    <script src=".lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src=".js/main.js"></script>
+</body>
+
+</html>
